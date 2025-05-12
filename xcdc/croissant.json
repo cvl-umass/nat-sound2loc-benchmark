@@ -1,0 +1,254 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "XCDC",
+  "description": "Xeno-canto Dawn Chorus Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "citeAs": "Wuao652/XCDC",
+  "url": "https://umass-my.sharepoint.com/:x:/g/personal/wuaoliu_umass_edu/EW_YHF5331xFhV8nqXesKYUBroBd7J2n0QxUiZxLUeYnkA?e=ZS6pfz&download=1",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "xcdc_recordings_csv",
+      "name": "xcdc_recordings_csv",
+      "description": "CSV file is hosted on OneDrive.",
+      "contentUrl": "https://umass-my.sharepoint.com/:x:/g/personal/wuaoliu_umass_edu/EW_YHF5331xFhV8nqXesKYUBroBd7J2n0QxUiZxLUeYnkA?e=ZS6pfz&download=1",
+      "encodingFormat": "text/csv",
+      "sha256": "103765b91c09192cc3489182096176c65b7eb1e0c45c6759a2f0c7c0652a52d6"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "xcdc_recordings",
+      "name": "xcdc_recordings",
+      "description": "Record set for xcdc_recordings.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/audio_id",
+          "name": "audio_id",
+          "description": "Audio ID.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "audio_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/url",
+          "name": "url",
+          "description": "Audio URL.",
+          "dataType": "sc:URL",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "url"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/latitude",
+          "name": "latitude",
+          "description": "Latitude.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "latitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/longitude",
+          "name": "longitude",
+          "description": "Longitude.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "longitude"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/length",
+          "name": "length",
+          "description": "Duration of audio.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "length"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/date",
+          "name": "date",
+          "description": "Recording date.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/time",
+          "name": "time",
+          "description": "Recording time.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "time"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/recordist",
+          "name": "recordist",
+          "description": "Recordist.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "recordist"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/main_scientific",
+          "name": "main_scientific",
+          "description": "Main scientific name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "main_scientific"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/main_common",
+          "name": "main_common",
+          "description": "Main common name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "main_common"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/all_scientific",
+          "name": "all_scientific",
+          "description": "All scientific names.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "all_scientific"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "xcdc_recordings/all_common",
+          "name": "all_common",
+          "description": "All common names.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "xcdc_recordings_csv"
+            },
+            "extract": {
+              "column": "all_common"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
