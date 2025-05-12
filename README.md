@@ -24,6 +24,8 @@ From XenoCanto, we select audio that:
 
 This yields 576 recordings with corresponding geographic locations and species annotations.
 
+**Note:** An unofficial release of all audio `.wav` files and their annotations is also provided and can be downloaded [here](https://umass-my.sharepoint.com/:f:/g/personal/wuaoliu_umass_edu/EpP4Hvr1e_BHg4mdQDm9zmEBAeYQmrnktmycvD38tUSG8g?e=cPIvEX).
+
 ### Annotation Format
 The [`xcdc_recordings.csv`](./xcdc/xcdc_recordings.csv) file contains metadata and labels for the dataset. Each row corresponds to one data sample. Below is a description of each column.
 | Column Name       | Description                                                                |
