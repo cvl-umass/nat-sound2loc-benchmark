@@ -46,7 +46,7 @@
   },
   "@type": "sc:Dataset",
   "name": "XCDC",
-  "description": "Dawn chorus is a symphony of bird songs involving complex sounds. These communal vocal displays occur at dawn and are most noticeable during the breeding season. A rich diversity of species can be heard in a relatively short span of time, possibly providing the cues needed to pinpoint location. We construct a new benchmark to test this hypothesis. From XenoCanto, we select audio that 1) was recorded during spring-time dawn chorus, 2) is at least 3 minutes long, 3) contains at least 10 distinct species. This yields 576 recordings with corresponding geographic locations and species annotations. We term this the XenoCanto Dawn Chorus (XCDC) dataset, a new benchmark for audio geolocation using wildlife sounds.",
+  "description": "The XenoCanto Dawn Chorus (XCDC) dataset. Includes a total of 576 recordings along with their geographic locations and species annotations from XenoCanto. Each audio 1) was recorded during spring dawn chorus, 2) is at least 3 minutes in duration, 3) contains annotations for at least 10 distinct species.",
   "conformsTo": "http://mlcommons.org/croissant/1.0",
   "citeAs": "@misc{nat-sound2loc-benchmark, author={UMass CVL Group}, title={nat-sound2loc-benchmark}, year={2025}, howpublished={\\url{https://github.com/cvl-umass/nat-sound2loc-benchmark}}, note={Accessed: 2025-05-12}}",
   "url": "https://github.com/cvl-umass/nat-sound2loc-benchmark",
