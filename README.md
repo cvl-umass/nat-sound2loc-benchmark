@@ -44,7 +44,7 @@ The [`xcdc_recordings.csv`](https://zenodo.org/records/15420487/preview/xcdc_rec
 | `all_common`      | List of common names of all annotated species in the recording             |
 
 
-**Note:** A Croissant metadata file [`croissant.json`](./xcdc/xcdc_croissant.json) is also provided. To integrate it into your machine learning workflow, please refer to [Hugging Face Croissant Guide](https://huggingface.co/docs/dataset-viewer/en/mlcroissant).
+**Note:** A Croissant metadata file [`xcdc_croissant.json`](./xcdc/xcdc_croissant.json) is also provided. To integrate it into your machine learning workflow, please refer to [Hugging Face Croissant Guide](https://huggingface.co/docs/dataset-viewer/en/mlcroissant).
 
 # Benchmarking Geolocation
 
@@ -59,7 +59,7 @@ To benchmark your method on these two datasets, please create a prediction csv f
 
 With this csv, run 
 ~~~
-python3 evaluate_geo.py --pred_cvs <> --dataset 
+python3 evaluate_geo.py --pred_cvs <> --dataset <>
 ~~~
 where the `dataset` argument can be `xcdc` or `inat`.
 This should give you a list of different metrics as reported in the paper. 
