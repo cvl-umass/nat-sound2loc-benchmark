@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/1.0#"
+  },
+  "@type": "Dataset",
+  "name": "XCDC",
+  "description": "The XenoCanto Dawn Chorus (XCDC) dataset. Includes a total of 576 recordings along with their geographic locations and species annotations from XenoCanto. Each audio 1) was recorded during spring dawn chorus, 2) is at least 3 minutes in duration, 3) contains annotations for at least 10 distinct species.",
+  "license": "MIT License",
+  "url": "https://github.com/cvl-umass/nat-sound2loc-benchmark",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "distribution": [
+    {
+      "@type": "https://schema.org/FileObject",
+      "@id": "xcdc.tar.gz",
+      "name": "xcdc.tar.gz",
+      "contentUrl": "https://zenodo.org/records/15420487/files/xcdc.tar.gz",
+      "encodingFormat": "application/gzip",
+      "sha256": "10cf66387487f50d6aa7a8b7228a8680e9c964114e1dd4dac64b895e4a37b8d2"
+    },
+    {
+      "@type": "https://schema.org/FileObject",
+      "@id": "xcdc_recordings.csv",
+      "name": "xcdc_recordings.csv",
+      "contentUrl": "https://zenodo.org/records/15420487/files/xcdc_recordings.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "103765b91c09192cc3489182096176c65b7eb1e0c45c6759a2f0c7c0652a52d6"
+    }
+  ]
+}
