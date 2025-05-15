@@ -24,10 +24,10 @@ From XenoCanto, we select audio that:
 
 This yields 576 recordings with corresponding geographic locations and species annotations.
 
-**Note:** An unofficial release of all audio `.wav` files and their annotations is also provided and can be downloaded [here](https://zenodo.org/records/15420487).
+We release all preprocessed audio `.wav` files and their annotations [here](https://zenodo.org/records/15420487). The annotation also contains urls to the original observation in XenoCanto, which can be used to access raw recordings. 
 
 ### Annotation Format
-The [`xcdc_recordings.csv`](./xcdc/xcdc_recordings.csv) file contains metadata and labels for the dataset. Each row corresponds to one data sample. Below is a description of each column.
+The [`xcdc_recordings.csv`](https://zenodo.org/records/15420487/preview/xcdc_recordings.csv) file contains metadata and labels for the dataset. Each row corresponds to one data sample. Below is a description of each column.
 | Column Name       | Description                                                                |
 | ----------------- | -------------------------------------------------------------------------- |
 | `audio_id`        | Unique ID for each audio recording                                         |
@@ -44,7 +44,7 @@ The [`xcdc_recordings.csv`](./xcdc/xcdc_recordings.csv) file contains metadata a
 | `all_common`      | List of common names of all annotated species in the recording             |
 
 
-**Note:** A Croissant metadata file [`croissant.json`](./xcdc/croissant.json) is also provided. To integrate it into your machine learning workflow, please refer to [Hugging Face Croissant Guide](https://huggingface.co/docs/dataset-viewer/en/mlcroissant).
+**Note:** A Croissant metadata file [`croissant.json`](./xcdc/xcdc_croissant.json) is also provided. To integrate it into your machine learning workflow, please refer to [Hugging Face Croissant Guide](https://huggingface.co/docs/dataset-viewer/en/mlcroissant).
 
 # Benchmarking Geolocation
 
